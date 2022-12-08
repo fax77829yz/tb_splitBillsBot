@@ -9,7 +9,7 @@ from flask_sqlalchemy import SQLAlchemy
 load_dotenv()
 
 API_TOKEN = os.getenv('API_TOKEN')
-WEBHOOK_URL_BASE = os.environ['URL_PATH']
+WEBHOOK_URL_BASE = os.getenv['URL_PATH']
 WEBHOOK_URL_PATH = API_TOKEN
 
 app = Flask(__name__)
