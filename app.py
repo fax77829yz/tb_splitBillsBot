@@ -10,6 +10,7 @@ load_dotenv()
 API_TOKEN = os.getenv('API_TOKEN')
 
 bot = telebot.TeleBot(API_TOKEN)
+bot.set_webhook()
 
 user_dict = {}
 
